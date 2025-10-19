@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="space-y-8">
@@ -10,7 +12,7 @@ export default function Home() {
       </section>
 
       <section>
-        <a
+        <Link
           href="/blog/colorado-winter-christmas"
           className="block rounded-lg border border-black/10 dark:border-white/15 p-6 hover:bg-black/[.03] dark:hover:bg-white/[.06] transition"
         >
@@ -20,7 +22,7 @@ export default function Home() {
             From ski days and snow tubing to hot springs, festive markets, and sparkling light displays—here’s how to make the most of Colorado’s winter wonderland.
           </p>
           <p className="mt-3 text-sm text-blue-600 dark:text-blue-400">Read the guide →</p>
-        </a>
+        </Link>
       </section>
     </div>
   );
